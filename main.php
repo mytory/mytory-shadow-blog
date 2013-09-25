@@ -96,7 +96,7 @@ class Mytory_Shadow_Blog {
 
 	        $permalink = str_replace('local', 'net', $post->guid);
 			$post_content = '<p class="mytory">
-	                    <a href="' . $permalink . '" class="mytory__permalink">▶원문 보기를 권장합니다: <span class="mytory__title">' . get_the_title() . '</span></a>
+	                    <a href="' . $permalink . '" class="mytory__permalink">▶원문: <span class="mytory__title">' . get_the_title() . '</span></a>
 	                </p>' .
 	                '<link rel="canonical" href="' . $permalink . '">' .
 	                get_the_content();
